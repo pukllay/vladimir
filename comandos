@@ -1,0 +1,6 @@
+// INSTALL VISUAL STUDIO CODE
+// RAZONES --- https://youtu.be/jef2gTVmvdk
+sudo snap install --classic code
+
+// INSTALL GIT
+sudo apt install git
