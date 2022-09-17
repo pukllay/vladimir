@@ -1,6 +1,12 @@
 // INSTALL VISUAL STUDIO CODE
-// RAZONES --- https://youtu.be/jef2gTVmvdk
-sudo snap install --classic code
+  // RAZONES --- https://youtu.be/jef2gTVmvdk
+  sudo snap install --classic code
+
+// SOLUTION VOLUME SOLUTION
+  // INSTALAR CONTROL VOLUMEN
+  sudo apt install pavucontrol
+  //INSTALAR EL DRIVES
+  sudo apt-get remove timidity
 
 // INSTALL GIT
-sudo apt install git
+  sudo apt install git
