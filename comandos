@@ -1,3 +1,9 @@
+// UPDATING PACKAGES
+  sudo apt update
+  
+// INSTALL NEOFETCH (Computer features)
+  sudo apt install neofetch
+
 // INSTALL VISUAL STUDIO CODE
   // RAZONES --- https://youtu.be/jef2gTVmvdk
   sudo snap install --classic code
@@ -10,3 +16,5 @@
 
 // INSTALL GIT
   sudo apt install git
+  
+ 
