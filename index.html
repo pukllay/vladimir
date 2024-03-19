@@ -17,6 +17,94 @@
 				<h2>titulo</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam ut officiis ab deserunt neque, rem iure, ratione vel laudantium illum aspernatur, veritatis dolor recusandae magni repellat aliquam autem similique.</p>
 			</article>
+			<article>
+				//--CONFIGURACION--//
+				--CONFIGURAR NOMBRE
+					git config --global user.name "vladimir"
+				--CONFIGURAR CORREO
+					git config --global user.email "coreoejemplo@gmail.com"
+				--ABRIR SIEMPRE GIT EN EDITOR ...
+					git config --global core.editor "code --wait"
+				--PARA SO WINDOWS "true" PARA LINUX O MAC "input"
+					git config --global core.autocrlf true
+				--AYUDIN DE MAS CONFIGURACONES
+					git config -h
+
+				--VER NOMBRE
+					git config user.name
+				--CAMBIAR EL NOMBRE DE LA RAMA DE master A main
+					git config --global init.defaultBranch main
+				--CAMBIAR EL NOMBRE DEL ÚLTIMO COMMIT
+					git commit --amend
+
+				//--CONSULTAR--//
+				--VER VERSION
+					git --version
+				--VER STADO
+					git status
+				--VER USUARIOS
+					git config user.name
+				--VER EMAILS
+					git config user.email
+				--LISTA DE CONFIGURACIONES
+					git config --list
+
+				//--INICIAR GIT--//
+				--INICIAR
+					git init
+				--AGREGAR A LA LECTURA TODO
+					git add .
+				--AGREGAR A LA LECTURA UN ARCHIVO
+					git add ****.txt
+				--SACAR DE LA LECTURA UN ARCHIVO
+					git rm --cached ****.txt
+				--GUARDAR CAMBIO
+					git commit -m "comentario randon"
+				--RESTAURAR ARCHIVO ELIMINAOD
+					git restore ****.formato
+					git restore --staged ****.formato
+				--VER TODOS LOS COMMINT
+					git log
+				--VER TODOS LOS COMMINT POR TITULOS
+					git log --oneline
+				--BORRAR EL ÚLTIMO COMMIT MANTENIENDO CAMBIOS
+					git reset --soft HEAD~1  // ~ = alt+126
+				--BORRAR EL ÚLTIMO COMMIT CON SUS CAMBIOS
+					git reset --hard HEAD~1  // ~ = alt+126
+				--RESETEAR O RETORNAR A UN COMMIT
+					git reset --hard hombreDelCommit
+
+				//--RAMAS--//
+				//EXISTEN DOS FORMAS
+				--CREAR UNA NUEVA RAMA Y ENTRAR A LA NUEVA RAMA
+					git checkout -b nombreRandon
+				--CREAR UNA NUEVA RAMA
+					git branch nombreRandon
+				--ENTRAR A LA NUEVA RAMA
+					git checkout nombreRandon
+				--VER TODAS LAS RAMAS
+					git branch
+				--CAMBIAR NOMBRE DE RAMA ACTUAL
+					git branch -m nombreRandon2
+				--CAMBIAR NOMBRE DE UNA RAMA SIN ESTAR EN ELLA
+					git branch -m nombreRandon nombreRandon2
+				--BORRAR RAMA NECESARIAMENTE SIN ESTAR EN ELLA
+					git branch -d nombreRandon
+				--FUSIONAR RAMA PRINCIPAL CON CUALQUIER RAMA
+					git merge nombreRandon
+
+				//RAMAS PARA PRODUCCIÓN//
+				--VER NOMBRE DEL REPOSITORIO REMOTO (WEB)
+					git remote
+
+				//REPOSITORIO//
+				--SUBIR AL REPOSITORIO DE LA NUBE
+					git push
+
+				//CREAR LLAVE SSH//
+				-- GENERAR SSH KEY LA T = TIPO, B = BYTEE, C = CORREO DEL USUARIO GIT
+					ssh-keygen -t rsa -b 4096 -C "correoejemplo@gmail.com"
+			</article>
 		</section>
 	</main>
 	<aside>
