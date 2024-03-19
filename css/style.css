@@ -2,6 +2,6 @@ body{
   background-color: black;
   color: chartreuse;
 }
-*{
-  padding: 0%;
+a{
+  color: chartreuse;
 }

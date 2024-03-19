@@ -1,0 +1,1 @@
+document.write(escape('código a cifrar'));
