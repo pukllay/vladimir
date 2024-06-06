@@ -1,1 +1,1 @@
-document.write(escape('código a cifrar'));
+document.write(escape(''));
