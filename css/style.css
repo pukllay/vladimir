@@ -1,9 +1,11 @@
 *{
   font-size: 20px;
   color: azure;
+  font-family: "Verdana";
 }
 body{
   background-color: rgb(0, 0, 0);
+  font-family: "Verdana";
 }
 code, pre{
   margin: 0px;
