@@ -13,10 +13,20 @@ code, pre{
 span{
   color: chartreuse;
 }
-pre, pre ul, pre ol, pre dl{
-  background-color: #333333;
+pre{
+  background-color: #272727;
   margin: 0;
   padding: 0;
 }
-
+mark{
+  background-color: rgb(5, 1, 187)
+}
+table {
+  border-collapse: collapse; /* Remove table cell borders */
+}
+th, td {
+  padding: 10px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add thin borders */
+  text-align: center; /* Center text in name cells */
+}
 

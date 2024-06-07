@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La ruta del tonto | aprendiendo informática</title>
+  <title>La ruta del tonto |  aprendiendo informática</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,13 +12,20 @@
     <nav>
       <ul>
         <li><a href="index.html">Regresar</a></li>
+        <li><a href="https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html" target="_blank">Simbolos html</a></li>
       </ul>
     </nav>
   </header>
   <main>
+  <details>
+  <summary><strong><span>&lt;a&gt;</span> <span>&lt;/a&gt;</span></strong> | Sirve para crear enlaces</summary>
+  <pre>
+    <code><span>&lt;a href="https:..." target="_blank" (Abrir en pestaña nueva)&gt;</span>Titulo del enlace<span>&lt;a&gt;</span>
+    <a href="#" target="_blank">Titulo del enlace</a></code></pre>
+  </details>
 
   <details>
-  <summary><strong><span>&lt;details&gt;</span> <span>&lt;/details&gt;</span></strong> |elemento desplegable que abre contenido al hacer clic en su resumen summary</summary>
+  <summary><strong><span>&lt;details&gt;</span> <span>&lt;/details&gt;</span></strong> | Elemento desplegable que abre contenido al hacer clic en su resumen summary</summary>
   <pre>
     <code><span>&lt;details&gt;</span>
       &lt;summary&gt;Titulo&lt;/summary&gt;
@@ -27,7 +34,7 @@
   </details>
 
   <details>
-  <summary><strong><span>&lt;dl&gt;</span> <span>&lt;/dl&gt;</span></strong> |Lista de definiciones</summary>
+  <summary><strong><span>&lt;dl&gt;</span> <span>&lt;/dl&gt;</span></strong> | Lista de definiciones</summary>
   <pre>
     <code><span>&lt;dl&gt;</span>
       &lt;dt&gt;Hardware&lt;/dt&gt;
@@ -61,7 +68,7 @@
   </details>
 
   <details>
-  <summary><strong><span>&lt;iframe&gt;</span> <span>&lt;/iframe&gt;</span></strong> |Inserta una página web dentro de otra</summary>
+  <summary><strong><span>&lt;iframe&gt;</span> <span>&lt;/iframe&gt;</span></strong> | Inserta una página web dentro de otra</summary>
   <pre>
     <code><span>&lt;iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62397.09536405512!2d-77.00640715!3d-12.192752649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9deeb34c327%3A0x4f7929b6bba87e8e!2sChorrillos!5e0!3m2!1ses-419!2spe!4v1717655027962!5m2!1ses-419!2spe" 
@@ -73,9 +80,17 @@
   </details>
 
 
+  <details>
+  <summary><strong><span>&lt;img&gt;</span> <span>&lt;/img&gt;</span></strong> | Sirve para crear enlaces</summary>
+  <pre>
+    <code><span>&lt;img src="img/chatgpt.png" alt="Titulo descriptivo" title="Titulo"&gt;</span>
+    <img src="img/chatgpt.png" alt="Titulo description" title="Titulo"></code></pre>
+  </details>
+
+
 
   <details>
-  <summary><strong><span>&lt;ol&gt;</span> <span>&lt;/ol&gt;</span></strong> |Lista ordenada</summary>
+  <summary><strong><span>&lt;ol&gt;</span> <span>&lt;/ol&gt;</span></strong> | Lista ordenada</summary>
   <pre>
     <code><span>&lt;ol&gt;</span>
       &lt;li&gt;Inicio&lt;/li&gt;
@@ -85,7 +100,7 @@
   </details>
 
   <details>
-  <summary><strong><span>&lt;samp&gt;</span> <span>&lt;/samp&gt;</span></strong> |Resalta texto que representa la salida de un programa o comando. Sale con topografía monoespaciada.</summary>
+  <summary><strong><span>&lt;samp&gt;</span> <span>&lt;/samp&gt;</span></strong> | Resalta texto que representa la salida de un programa o comando. Sale con topografía monoespaciada.</summary>
   <pre>
     <code>&lt;p&gt;El resultado de la operación es: <span>&lt;samp&gt;</span>42<span>&lt;/samp&gt;</span>&lt;/p&gt;
       El resultado de la operación es: <samp><span>42</span></samp>
@@ -145,7 +160,7 @@
   </details>
 
   <details>
-  <summary><strong><span>&lt;ul&gt;</span> <span>&lt;/ul&gt;</span></strong> |Lista desordenada</summary>
+  <summary><strong><span>&lt;ul&gt;</span> <span>&lt;/ul&gt;</span></strong> | Lista desordenada</summary>
   <pre>
     <code><span>&lt;ul&gt;</span>
       &lt;li&gt;Inicio&lt;/li&gt;
@@ -155,11 +170,26 @@
   </details>
 
   <details>
-  <summary><strong><span>&lt;var&gt;</span> <span>&lt;/var&gt;</span></strong> |Para poner formulas matemáticas o variables</summary>
+  <summary><strong><span>&lt;var&gt;</span> <span>&lt;/var&gt;</span></strong> | Para poner formulas matemáticas o variables</summary>
   <pre>
     <code>&lt;p&gt;Einstein descubrió que: <span>&lt;var&gt;</span>E = m c &lt;sup&gt;2&lt;/sup&gt;<span>&lt;/var&gt;</span>&lt;/p&gt;
     Einstein descubrió que: <var><span>E = m c </span><sup><span>2</span></sup></var></code></pre>
   </details>
+
+
+  <details>
+  <summary><strong><span>Formateo de texto</span></strong></summary>
+  <pre>
+    <code><span>&lt;i&gt;</span><i>Texto cursiva</i><span>&lt;/i&gt;</span>
+    <code><span>&lt;b&gt;</span><b>Texto negrita</b><span>&lt;/b&gt;</span>
+    <code><span>&lt;strong&gt;</span><strong>En negrita y ayuda al SEO</strong><span>&lt;/strong&gt;</span>
+    <code><span>&lt;mark&gt;</span><mark>Texto resaltado</mark><span>&lt;/mark&gt;</span>
+    <code><span>&lt;ins&gt;</span><ins>Texto subrayado</ins><span>&lt;/ins&gt;</span>
+    <code><span>&lt;del&gt;</span><del>Texto tachado</del><span>&lt;/del&gt;</span>
+    <code><span>&lt;sup&gt;</span>Texto superíndice <sup>por encima</sup><span>&lt;/sup&gt;</span>
+    <code><span>&lt;sub&gt;</span>Texto subíndice <sub>por debajo</sub><span>&lt;/sub&gt;</span>
+  </details>
+
   </main>
   <footer></footer>
 </body>
