@@ -1,11 +1,11 @@
 *{
-  font-size: 20px;
+  font-size: 18px;
   color: azure;
   font-family: "Verdana";
+  box-sizing: border-box;
 }
 body{
   background-color: rgb(0, 0, 0);
-  font-family: "Verdana";
 }
 code, pre{
   margin: 0px;
@@ -17,16 +17,46 @@ pre{
   background-color: #272727;
   margin: 0;
   padding: 0;
+  overflow-x: auto; /* Permite el scroll horizontal */
 }
 mark{
   background-color: rgb(5, 1, 187)
 }
 table {
-  border-collapse: collapse; /* Remove table cell borders */
+  border-collapse: collapse;
+  margin-bottom: 5px; 
+  width: 100%;
 }
 th, td {
   padding: 10px; /* Add padding to cells */
   border: 1px solid #ddd; /* Add thin borders */
   text-align: center; /* Center text in name cells */
 }
-
+pre dl{
+  margin: 0;
+}
+section {
+  display: grid;
+  gap: 10px;
+}
+input{
+  background-color: black;
+  margin-top: 2px;
+  color: azure;
+}
+/* Para móviles: Una tabla por fila */
+@media (max-width: 600px) {
+  section {
+      grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  section {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) {
+  section {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
