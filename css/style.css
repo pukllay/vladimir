@@ -44,6 +44,10 @@ input{
   margin-top: 2px;
   color: azure;
 }
+blockquote{
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
 /* Para móviles: Una tabla por fila */
 @media (max-width: 600px) {
   section {
