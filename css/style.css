@@ -30,6 +30,10 @@ table {
 th, td {
   padding: 10px; /* Add padding to cells */
   border: 1px solid #ddd; /* Add thin borders */
+}
+th, .table__ia td {
+  padding: 10px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add thin borders */
   text-align: center; /* Center text in name cells */
 }
 pre dl{
@@ -47,6 +51,11 @@ input{
 blockquote{
   margin-top: 0%;
   margin-bottom: 0%;
+}
+.copy-button {
+  cursor: pointer;
+  color: rgb(0, 196, 16);
+  background-color: #4b4b4b;
 }
 /* Para móviles: Una tabla por fila */
 @media (max-width: 600px) {
