@@ -39,72 +39,103 @@
         <li><a href="">CSS (disponible pronto)</a></li>
         <li><a href="">JS (disponible pronto)</a></li>
         <li><a href="git.html">Git</a></li>
-        <li><a href="sql.html">SQL Server</a></li>
+        <li><a href="index.html">Regresar</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <table class="table__ia">
-        <tr>
-          <th colspan="2">General</th>
-        </tr>
-        <tr>
-          <td><a href="https://chatgpt.com/" target="_blank">Chat GPT</a></td>
-          <td><img src="img/chatgpt.png" alt=""></td>
-        </tr>
-        <tr>
-          <td><a href="https://gemini.google.com/app" target="_blank">Gemini</a></td>
-          <td><img src="img/gemini.png" alt=""></td>
-        </tr>
-        <tr>
-          <td><a href="https://www.bing.com/chat" target="_blank">Bing</a></td>
-          <td><img src="img/bing.png" alt=""></td>
-        </tr>
-      </table>
+    <details>
+      <summary>Tipos de datos</summary>
       <table>
         <tr>
-          <th colspan="2">Imágenes</th>
+          <th>Tipo</th>
+          <th>Descripción</th>
+          <th>Ejemplo</th>
         </tr>
         <tr>
-          <td><a href="https://app.leonardo.ai" target="_blank">Leonardo</a></td>
-          <td><img src="img/leonardo.png" alt=""></td>
+          <td>VARCHAR(n)</td>
+          <td>Cadenas o textos</td>
+          <td>"texto" VARCHAR(5)</td>
         </tr>
         <tr>
-          <td><a href="https://manzzeto.com" target="_blank">Manzzeto</a></td>
-          <td><img src="img/manzzeto.png" alt=""></td>
+          <td>BIT</td>
+          <td>Boolean 1 o 0</td>
+          <td>1=Verdadero, 0=Falso</td>
         </tr>
         <tr>
-          <td><a href="https://www.bing.com/images/create" target="_blank">Bing</a></td>
-          <td><img src="img/bing.png" alt=""></td>
+          <td>SMALLINT</td>
+          <td>-32 768 a 32 767</td>
+          <td>155</td>
+        </tr>
+        <tr>
+          <td>TINYINT</td>
+          <td>0 a 255</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>INT</td>
+          <td></td>
+          <td>5464</td>
+        </tr>
+        <tr>
+          <td>DECIMAL(n,a)</td>
+          <td>n=n° digitos, a=decimales</td>
+          <td>2156.25 DECIMAL(4.2)</td>
+        </tr>
+        <tr>
+          <td>MONEY</td>
+          <td>Guarda dinero</td>
+          <td>5,165,059.40</td>
+        </tr>
+        <tr>
+          <td>DATE</td>
+          <td>Fecha sin hora</td>
+          <td>'31-01-2024'</td>
+        </tr>
+        <tr>
+          <td>DATETIME</td>
+          <td>Fecha y hora</td>
+          <td>'31-01-2024 08:54:15'</td>
         </tr>
       </table>
-      <table>
-        <tr>
-          <th colspan="2">Diseño UI/UX</th>
-        </tr>
-        <tr>
-          <td><a href="https://www.midjourney.com" target="_blank">Midjourney</a></td>
-          <td><img src="img/midjourney.png" alt=""></td>
-        </tr>
-        <tr>
-          <td><a href="https://designs.ai/" target="_blank">Designs AI</a></td>
-          <td><img src="img/designs-ai.png" alt=""></td>
-        </tr>
-        <tr>
-          <td><a href="https://www.qoqo.ai/" target="_blank">QoQo AI UX</a></td>
-          <td><img src="img/qoqo.png" alt=""></td>
-        </tr>
-      </table>
-    </section>
+    </details>
+    <details>
+      <summary>Crear DB y tabla</summary>
+      <pre><code>        CREATE DATABASE Ejemplo;
+          GO
+        USE Ejemplo;
+          GO
+        CREATE TABLE Estudiantes(
+          estudianteID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+          nombre VARCHAR(20) NOT NULL,
+          apellido VARCHAR(20) NOT NULL,
+          edad TINYINT
+        )</code></pre>
+    </details>
+    <details>
+      <summary>Titulo</summary>
+      <pre><code>       DECLARE @personal TABLE(
+        nombre VARCHAR(50),
+        salario DECIMAL(18,2)
+    );
+    INSERT INTO @personal VALUES ('Daly', 3500.50),('Daniela', 2500.50),('Karla', 1500.00);
+    SELECT * FROM @personal;
+    
+    WITH salarioPromedio AS (
+        SELECT AVG(salario) AS promedio
+        FROM @personal
+    )
+    SELECT 
+        nombre, salario
+    FROM 
+        @personal
+    WHERE 
+        salario > (SELECT promedio FROM salarioPromedio);</code></pre>
+    </details>
 	</main>
-  <aside style="text-align: center;">
-    <img src="img/producto.webp" alt="Colchones flotex" style="width: 350px; margin-top: 10px">
-  </aside>
   <footer>
 
 	</footer>
-
 	<script type="text/javascript">
     document.oncontextmenu = function () {
         return false;
