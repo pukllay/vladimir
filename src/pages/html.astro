@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La ruta del tonto |  aprendiendo informática</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-		<h1>La ruta del tonto 🤪</h1>
-    <nav>
-      <ul>
-        <li><a href="comandos.html">Comandos</a></li>
-        <li><a href="index.html">Regresar</a></li>
-        <li><a href="">CSS (disponible pronto)</a></li>
-        <li><a href="">JS (disponible pronto)</a></li>
-        <li><a href="git.html">Git</a></li>
-        <li><a href="sql.html">SQL Server</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="La ruta del tonto | aprendiendo HTML" url="https://pukllay.github.io/vladimir/html.html">
   <p><a href="https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html" target="_blank">Simbolos html</a></p>
 
   <details>
@@ -93,21 +73,20 @@
   <details>
   <summary><strong><span>&lt;iframe&gt;</span> <span>&lt;/iframe&gt;</span></strong> | Inserta una página web dentro de otra</summary>
   <pre>
-    <code><span>&lt;iframe
+    <code><span>&lt;iframe&gt;
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62397.09536405512!2d-77.00640715!3d-12.192752649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9deeb34c327%3A0x4f7929b6bba87e8e!2sChorrillos!5e0!3m2!1ses-419!2spe!4v1717655027962!5m2!1ses-419!2spe" 
       width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt;</span>
-    <span>&lt;/iframe&gt;</span>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62397.09536405512!2d-77.00640715!3d-12.192752649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9deeb34c327%3A0x4f7929b6bba87e8e!2sChorrillos!5e0!3m2!1ses-419!2spe!4v1717655027962!5m2!1ses-419!2spe" 
-    width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></code></pre>
+    <span>&lt;/iframe&gt;</span></code>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62397.09536405512!2d-77.00640715!3d-12.192752649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9deeb34c327%3A0x4f7929b6bba87e8e!2sChorrillos!5e0!3m2!1ses-419!2spe!4v1717655027962!5m2!1ses-419!2spe" 
+  width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></pre>
   </details>
 
 
   <details>
   <summary><strong><span>&lt;img&gt;</span></strong> | Sirve para crear enlaces</summary>
   <pre>
-    <code><span>&lt;img src="img/chatgpt.png" alt="Titulo descriptivo" title="Titulo"&gt;</span>
-    <img src="img/chatgpt.png" alt="Titulo description" title="Titulo"></code></pre>
+    <code><span>&lt;img src="img/chatgpt.png" alt="Titulo descriptivo" title="Titulo"&gt;</span></code>
+    <img src="img/chatgpt.png" alt="Titulo description" title="Titulo"></pre>
   </details>
 
 
@@ -130,14 +109,14 @@
     ______________________________________________________________________________________
     &lt;pre&gt;
       <span>&lt;samp&gt;</span>
-      function calcularImpuesto(total) {
+      function calcularImpuesto(total) &#123;
         return total * 0.18;
-      }
+        &#125;
       <span>&lt;/samp&gt;</span>
     &lt;/pre&gt;
-        <samp><span>function calcularImpuesto(total) {
+        <samp><span>function calcularImpuesto(total) &#123;
           return total * 0.18;
-        }</span></samp>
+          &#125;</span></samp>
     ______________________________________________________________________________________
     &lt;p&gt;Para instalar el paquete, ejecuta: <span>&lt;samp&gt;</span>npm install mi-paquete<span>&lt;/samp&gt;</span>&lt;/p&gt;
     Para instalar el paquete, ejecuta: <samp><span>npm install mi-paquete</span></samp></code></pre>
@@ -248,7 +227,4 @@
     <span>&lt;aside&gt; </span> | Define el contenido aparte del contenido de la página
     <span>&lt;section&gt; </span> | Define una sección en un documento</code></pre>
   </details>
-  </main>
-  <footer></footer>
-</body>
-</html>
+</Layout>
